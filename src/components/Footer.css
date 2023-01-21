@@ -1,4 +1,48 @@
-footer #loginFooter{
-    display: flex;
-    background-color: #FAFAFA;;
+footer{
+    display: flexbox;
+}
+
+#loginFooter{
+    background-color: #A81527;
+    justify-content: center;   
+}
+#icons{
+    margin-left: 40vw;
+}
+#phoneIcon, #locationIcon, #emailIcon{
+    width: 5vh;
+    align-items: center;
+    text-align: center;
+    margin-left: 3vw;
+    margin-right: 3vw;;
+}
+.terms, .iconsMex, .rights{
+    display: inline-block;
+}
+ .terms{
+    font-size: .8em;
+    width: 25%;
+    text-align: none;
+}
+.iconsMex{
+    flex-direction: column;
+    
+}
+
+.enterprise{
+    font-size: .8em;
+    flex-direction: column;
+}
+
+#GrupoLicon3, #banderaMex1{
+    height: 10vh;
+    width: 10vw;
+    
+}
+
+.rights{
+    font-size: .8em;
+    width: 25%;
+    text-align: none; 
+    
 }
