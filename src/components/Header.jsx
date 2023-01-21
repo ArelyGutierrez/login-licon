@@ -1,37 +1,28 @@
-import liconIcon from '../images/liconIcon.png'
+import liconIconRemovebg from '../images/liconIconRemovebg.png'
+import searchIcon from '../images/searchIcon.png'
 import './Header.css';
 
 export const Header = () => {
     return (
         <>
             <header class="headerLogin">
-                <img id='liconIcon' src={liconIcon} alt={liconIcon} />
-
-                <nav className="navbar navbar-expand-lg" id="nav">
+                <nav id='navbar'>
                     <div className="container-fluid">
-
-                        <div className="collapse navbar-collapse" id="navbarText">
-                            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li className="nav-item">CONÓCENOS
-                                    {/* <Link to="/users" className="ref">User</Link> */}
-                                </li>
-                                <li className="nav-item">PRODUCTOS
-                                    {/* <Link to="/administrator" className="ref">Menu</Link> */}
-                                </li>
-                                <li className="nav-item">CONTACTO
-                                    {/* <Link to="/administrator" className="ref">Menu</Link> */}
-                                </li>
-                                <li className="nav-item">INICIAR SESIÓN
-                                    {/* <Link to="/administrator" className="ref">Menu</Link> */}
-                                </li>
-                            </ul>
-
-
-                            <div >
-                                {/* <Time className='time' /> */}
-                            </div>
-                        </div>
+                        <img id='liconIcon' src={liconIconRemovebg} alt={liconIconRemovebg} />
                     </div>
+
+                    <div className="topnav">
+                        <a href="#news">News</a>
+                        <a href="#contact">Contact</a>
+                        <a href="#about">About</a>
+                    </div>
+
+                    <form id='searchForm'>
+                        <input id='searchInput' placeholder='buscar' />
+                        <button class="searchButton" type="submit"><img id='searchIcon' src={searchIcon} alt={searchIcon} /></button>
+                    </form>
+
+
                 </nav>
 
             </header>
